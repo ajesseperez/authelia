@@ -1,0 +1,19 @@
+{
+  "name": "Authelia",
+  "version": "0.0.1",
+  "slug": "authelia",
+  "url": "https://github.com/ajesseperez/authelia",
+  "description": "SSO for Internal Applications",
+  "webui": "http://[HOST]:[PORT:9091]",
+  "stage": "experimental",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "services",
+  "boot": "auto",
+  "ports": {
+    "9091/tcp": 9091
+  },
+  "ports_description": {
+    "9091/tcp": "Web interface"
+  },
+  "map": ["share:rw"]
+}
